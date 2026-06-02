@@ -1,0 +1,19 @@
+openapi: "3.0.1"
+info:
+  title: "FAQ-API"
+  description: "Created by AWS Lambda"
+  version: "2026-06-02T14:01:03Z"
+servers:
+- url: "https://ks9vmrcye0.execute-api.ap-northeast-1.amazonaws.com/{basePath}"
+  variables:
+    basePath:
+      default: "myDeployment"
+paths:
+  /FAQ:
+    x-amazon-apigateway-any-method:
+      responses:
+        "200":
+          description: "200 response"
+          content: {}
+components: {}
+x-amazon-apigateway-security-policy: "TLS_1_0"
